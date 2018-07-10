@@ -71,8 +71,8 @@ function flipCheck(e) {
   if (len === 2) {
     //console.log(flippedCards);
     if (flippedCards[0].className === flippedCards[1].className) {
-      setTimeout(function(){ alert("match); }, 3000);
       flippedCards = [];
+      setTimeout(function(){ alert("match); }, 3000);                            
       matchedCards = matchedCards + 1;
       console.log(matchedCards);
       if (matchedCards == 6) {

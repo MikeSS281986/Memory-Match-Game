@@ -71,7 +71,6 @@ function flipCheck(e) {
   if (len === 2) {
     //console.log(flippedCards);
     if (flippedCards[0].className === flippedCards[1].className) {
-      setTimeout(function(){ alert("match); }, 3000);
       flippedCards = [];                            
       matchedCards = matchedCards + 1;
       console.log(matchedCards);
@@ -81,7 +80,6 @@ function flipCheck(e) {
       }
       return;
     } else {
-      alert("no match");
       flippedCards[0].style.backgroundColor = "#bdc7ca";
       flippedCards[1].style.backgroundColor = "#bdc7ca";
       flippedCards = [];
